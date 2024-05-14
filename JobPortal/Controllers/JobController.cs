@@ -294,7 +294,7 @@ namespace JobPortal.Controllers
             var jobpost = db.PostJobTables.Find(id);
             db.Entry(jobpost).State = System.Data.Entity.EntityState.Deleted;
             db.SaveChanges();
-            return RedirectToAction("CompanyJobList");
+            return RedirectToAction("AllCompanyPendingJob");
         }
 
         public ActionResult ApprovedPost(int? id)
