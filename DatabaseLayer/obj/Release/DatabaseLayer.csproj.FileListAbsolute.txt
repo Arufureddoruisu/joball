@@ -1,0 +1,12 @@
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\bin\Release\DatabaseLayer.dll.config
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\bin\Release\DatabaseLayer.dll
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\bin\Release\DatabaseLayer.pdb
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\bin\Release\EntityFramework.dll
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\bin\Release\EntityFramework.xml
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\obj\Release\DatabaseLayer.csproj.AssemblyReference.cache
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\obj\Release\DatabaseLayer.csproj.CoreCompileInputs.cache
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\obj\Release\DatabaseLayer.csproj.CopyComplete
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\obj\Release\DatabaseLayer.dll
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\obj\Release\DatabaseLayer.pdb

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<DatabaseLayer.JobNatureTable>
+
+@{
+    ViewBag.Title = "Nature";
+}
+
+<div class="section-top-border col-md-10">
+    <h3 class="mb-30">All Category @Html.ActionLink("New Nature", "Create", null, new { @class = "genric-btn primary-border", @style = "float:right;" })</h3>
+    <div class="progress-table-wrap">
+        <div class="progress-table">
+
+            <div class="table-head">
+                <div class="serial">#</div>
+                <div class="country">Job Nature</div>
+                <div class="country">Action</div>
+            </div>
+
+            @foreach (var item in Model)
+            {
+
+                <div class="table-row">
+                    <div class="serial">@Html.DisplayFor(modelItem => item.JobNatureID)</div>
+                    <div class="country"> @Html.DisplayFor(modelItem => item.JobNature)</div>
+                    <div class="country">
+                        @Html.ActionLink("Edit", "Edit", new { id = item.JobNatureID }, new { @class = "genric-btn primary" })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.JobNatureID }, new { @class = "genric-btn danger" })
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<style>
+    .small-font {
+        font-size: 12px; /* Adjust the font size as needed */
+    }
+</style>

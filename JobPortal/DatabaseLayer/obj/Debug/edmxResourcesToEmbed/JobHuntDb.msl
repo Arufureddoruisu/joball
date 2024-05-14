@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JobHuntDbModelStoreContainer" CdmEntityContainer="JobHuntDbEntities">
+    <EntitySetMapping Name="CompanyTables">
+      <EntityTypeMapping TypeName="JobHuntDbModel.CompanyTable">
+        <MappingFragment StoreEntitySet="CompanyTable">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobCategoryTables">
+      <EntityTypeMapping TypeName="JobHuntDbModel.JobCategoryTable">
+        <MappingFragment StoreEntitySet="JobCategoryTable">
+          <ScalarProperty Name="JobCategoryID" ColumnName="JobCategoryID" />
+          <ScalarProperty Name="JobCategory" ColumnName="JobCategory" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobNatureTables">
+      <EntityTypeMapping TypeName="JobHuntDbModel.JobNatureTable">
+        <MappingFragment StoreEntitySet="JobNatureTable">
+          <ScalarProperty Name="JobNatureID" ColumnName="JobNatureID" />
+          <ScalarProperty Name="JobNature" ColumnName="JobNature" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobRequirementDetailTables">
+      <EntityTypeMapping TypeName="JobHuntDbModel.JobRequirementDetailTable">
+        <MappingFragment StoreEntitySet="JobRequirementDetailTable">
+          <ScalarProperty Name="JobRequirementDetailID" ColumnName="JobRequirementDetailID" />
+          <ScalarProperty Name="JobRequirementID" ColumnName="JobRequirementID" />
+          <ScalarProperty Name="JobRequirementDetail" ColumnName="JobRequirementDetail" />
+          <ScalarProperty Name="PostJobID" ColumnName="PostJobID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobRequirementTables">
+      <EntityTypeMapping TypeName="JobHuntDbModel.JobRequirementTable">
+        <MappingFragment StoreEntitySet="JobRequirementTable">
+          <ScalarProperty Name="JobRequirementID" ColumnName="JobRequirementID" />
+          <ScalarProperty Name="JobRequirementTitle" ColumnName="JobRequirementTitle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobStatusTables">
+      <EntityTypeMapping TypeName="JobHuntDbModel.JobStatusTable">
+        <MappingFragment StoreEntitySet="JobStatusTable">
+          <ScalarProperty Name="JobStatusID" ColumnName="JobStatusID" />
+          <ScalarProperty Name="JobStatus" ColumnName="JobStatus" />
+          <ScalarProperty Name="StatusMessage" ColumnName="StatusMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PostJobTables">
+      <EntityTypeMapping TypeName="JobHuntDbModel.PostJobTable">
+        <MappingFragment StoreEntitySet="PostJobTable">
+          <ScalarProperty Name="PostJobID" ColumnName="PostJobID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="JobCategoryID" ColumnName="JobCategoryID" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="JobDescription" ColumnName="JobDescription" />
+          <ScalarProperty Name="MinSalary" ColumnName="MinSalary" />
+          <ScalarProperty Name="MaxSalary" ColumnName="MaxSalary" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Vacancy" ColumnName="Vacancy" />
+          <ScalarProperty Name="JobNatureID" ColumnName="JobNatureID" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="ApplicationLastDate" ColumnName="ApplicationLastDate" />
+          <ScalarProperty Name="LastDate" ColumnName="LastDate" />
+          <ScalarProperty Name="JobStatusID" ColumnName="JobStatusID" />
+          <ScalarProperty Name="WebUrl" ColumnName="WebUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTables">
+      <EntityTypeMapping TypeName="JobHuntDbModel.UserTable">
+        <MappingFragment StoreEntitySet="UserTable">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTypeTables">
+      <EntityTypeMapping TypeName="JobHuntDbModel.UserTypeTable">
+        <MappingFragment StoreEntitySet="UserTypeTable">
+          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

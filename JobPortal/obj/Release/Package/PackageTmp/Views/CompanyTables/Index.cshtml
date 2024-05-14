@@ -1,0 +1,48 @@
+﻿@model IEnumerable<DatabaseLayer.CompanyTable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Company Information</h2>
+
+
+<div class="progress-table-wrap">
+    <div class="progress-table">
+        <table class="table">
+            <tr>
+                <th>
+                    Company Name
+                </th>
+                <th>
+                    Company Phone No.
+                </th>
+                <th>
+                    Company Email Address
+                </th>
+                <th>Action</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CompanyName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PhoneNo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmailAddress)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.CompanyID }, new { @class = "genric-btn primary", style = "width: 100px; height: 40px;" })
+                        @Html.ActionLink("Details", "Details", new { id = item.CompanyID }, new { @class = "genric-btn info", style = "width: 100px; height: 40px;" })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.CompanyID }, new { @class = "genric-btn danger", style = "width: 100px; height: 40px;" })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

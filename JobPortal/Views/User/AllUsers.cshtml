@@ -1,0 +1,65 @@
+﻿@model IEnumerable<DatabaseLayer.UserTable>
+
+@{
+    ViewBag.Title = "All Users";
+}
+<h2>All User Accounts</h2>
+
+<div class="progress-table-wrap">
+    <div class="progress-table">
+        <table class="table">
+            <tr>
+                <th>
+                    User Type
+                </th>
+                <th>
+                    User Name
+                </th>
+                <th>
+                    Password
+                </th>
+                <th>
+                    Contact No.
+                </th>
+                <th>
+                    User Email Address
+                </th>
+                <th>Action</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserTypeID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Password)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ContactNo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmailAddress)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.UserID }, new { @class = "genric-btn primary", style = "width: 100px; height: 40px;" })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.UserID }, new { @class = "genric-btn danger", style = "width: 100px; height: 40px;" })
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+<script>
+    // Add a "like" button after every 20 users displayed
+    $(document).ready(function () {
+        var usersDisplayed = $("table tr").length - 1; // Subtracting 1 for the table header row
+        if (usersDisplayed >= 20) {
+            $(".progress-table").after('<button id="likeButton" class="genric-btn success">Like</button>');
+        }
+    });
+</script>

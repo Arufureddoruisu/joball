@@ -1,0 +1,12 @@
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\bin\Debug\DatabaseLayer.dll.config
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\bin\Debug\DatabaseLayer.dll
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\bin\Debug\DatabaseLayer.pdb
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\bin\Debug\EntityFramework.dll
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\bin\Debug\EntityFramework.xml
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.AssemblyReference.cache
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CoreCompileInputs.cache
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CopyComplete
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\obj\Debug\DatabaseLayer.dll
+C:\Users\ALFD\Desktop\Job Hunt Website\Application\DatabaseLayer\obj\Debug\DatabaseLayer.pdb

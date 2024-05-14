@@ -1,0 +1,103 @@
+﻿@model JobPortal.Models.PostJobMV
+@{
+    ViewBag.Title = "Post Job";
+}
+
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="contact-title">Post Job Offer</h2>
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                @using (Html.BeginForm("PostJob", "Job", FormMethod.Post, new { @class = "form-contact" }))
+                {
+                    @Html.AntiForgeryToken()
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="jobtitle">Enter Job Title</label>
+                            @Html.EditorFor(model => model.JobTitle, new { htmlAttributes = new { @class = "form-control valid", @type = "text", @id = "jobtitle", @placeholder = "Enter Job Title" } })
+                            @Html.ValidationMessageFor(model => model.JobTitle, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="location">Enter Job Location</label>
+                            @Html.EditorFor(model => model.Location, new { htmlAttributes = new { @class = "form-control valid", @type = "text", @id = "location", @placeholder = "Enter Location" } })
+                            @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="minsalary">Enter Minimum Salary</label>
+                            @Html.EditorFor(model => model.MinSalary, new { htmlAttributes = new { @class = "form-control valid", @type = "number", @id = "minsalary", @placeholder = "Enter Minimum Salary" } })
+                            @Html.ValidationMessageFor(model => model.MinSalary, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="maxsalary">Enter Maximum Salary</label>
+                            @Html.EditorFor(model => model.MaxSalary, new { htmlAttributes = new { @class = "form-control valid", @type = "number", @id = "maxsalary", @placeholder = "Enter Maximum Salary" } })
+                            @Html.ValidationMessageFor(model => model.MaxSalary, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="divcompanyname">
+                        <div class="form-group">
+                            <label for="vacancy">Enter Required Job Vacancy</label>
+                            @Html.EditorFor(model => model.Vacancy, new { htmlAttributes = new { @class = "form-control", @type = "number", @id = "vacancy", @placeholder = "Enter Vacancy" } })
+                            @Html.ValidationMessageFor(model => model.Vacancy, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="divcompanyphoneno">
+                        <div class="form-group">
+                            <label for="weburl">Enter Redirect Job URL</label>
+                            @Html.EditorFor(model => model.WebUrl, new { htmlAttributes = new { @class = "form-control valid", @type = "tel", @id = "weburl", @placeholder = "Enter Redirect URL" } })
+                            @Html.ValidationMessageFor(model => model.WebUrl, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="jobcategory">Select Job Category</label>
+                        <div class="form-group">
+                            @Html.DropDownListFor(model => model.JobCategoryID, Model.JobCategoryList, "Select Category", new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.JobCategoryID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="jobnature">Select Job Nature</label>
+                        <div class="form-group">
+                            @Html.DropDownListFor(model => model.JobNatureID, Model.JobNatureList, "Select Nature", new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.JobNatureID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mt-3">
+                            <label for="applicationdate">Select Application Date</label>
+                            @Html.EditorFor(model => model.ApplicationLastDate, new { htmlAttributes = new { @class = "form-control", @type = "date", @id = "applicationdate", @placeholder = "Enter Application Date" } })
+                            @Html.ValidationMessageFor(model => model.ApplicationLastDate, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-12" id="divcompanydescription">
+                        <div class="form-group">
+                            <label for="jobdescription">Enter Job Description</label>
+                            @Html.EditorFor(model => model.JobDescription, new { htmlAttributes = new { @class = "form-control", @type = "text", @id = "jobdescription", @placeholder = "Enter Description" } })
+                            @Html.ValidationMessageFor(model => model.JobDescription, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group mt-3">
+                                <input type="submit" value="Register" class="genric-btn success e-large" />
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
